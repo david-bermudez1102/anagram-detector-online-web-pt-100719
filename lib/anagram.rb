@@ -11,7 +11,8 @@ class Anagram
     @word.sort
     array.each{ |e|
       e = e.split("")
-      @array << e.all? { |a| a.include?(@word) }
+      e.sort
+      @array << e.join("") if e == @word
     }
   end
 end
