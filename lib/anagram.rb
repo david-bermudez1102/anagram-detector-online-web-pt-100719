@@ -12,8 +12,8 @@ class Anagram
       possible_match << e.split("")
       if possible_match.sort == @word.sort
       @array << possible_match.join()
-      @array
     end
+    @array
     }
   end
 end
