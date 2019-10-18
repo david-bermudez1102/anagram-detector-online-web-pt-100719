@@ -9,7 +9,7 @@ class Anagram
     @array = []
     @word = @word.split("")
     @word = @word.sort
-    array.map{ |e|
+    array.each{ |e|
       e = e.split("")
       e = e.sort
       @array << e.join("") if e == @word
