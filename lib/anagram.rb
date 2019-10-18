@@ -13,7 +13,7 @@ class Anagram
       e = e.split("")
       e.sort
       @array << e.join("") if e == @word
-      @arary
+      @array
     }
   end
 end
