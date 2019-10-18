@@ -12,8 +12,10 @@ class Anagram
     array.each{ |e|
       e = e.split("")
       e = e.sort
-      @array << e.join("") if e == @word
+      if e == @word
+      @array << e.join("") 
       @array
+    end
     }
   end
 end
