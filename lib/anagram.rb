@@ -9,7 +9,7 @@ class Anagram
     @array = []
     @word = @word.split("")
     array.each{ |e|
-      @array << e.all? { |a| a.include?(word) }
+      @array << e.all? { |a| a.include?(@word) }
     }
   end
 end
