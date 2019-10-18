@@ -13,7 +13,8 @@ class Anagram
       if possible_match.sort == @word.sort
       @array << possible_match.join()
     end
-    @array
+    
     }
+    @array
   end
 end
